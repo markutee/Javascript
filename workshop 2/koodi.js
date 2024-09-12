@@ -5,8 +5,8 @@ document.write("<p><cite><strong>If I had nine hours to chop down a tree, I'd sp
 function repeatingText(text) {
     for (let i = 0; i < 50; i++) {
         document.write(text + "<br>");
-    }
-}
+    } // for
+} // function
 
 repeatingText("Tämä on toistuva lause.");
 
