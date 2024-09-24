@@ -85,6 +85,7 @@
         </ul>
         <form>
             <textarea id="textdata"></textarea><br>
+            <span id="message"></span><br>
             <span id="charcount"></span>
             <button>Send me</button>
         </form>
@@ -92,10 +93,11 @@
 
         
         <h2>Exercise 4</h2>
-        <div id="coordinates"></div>
+        <div id="coordinates" style="width: 300px; height: 200px; border: 1px solid black;"></div>
         <p>Add onMouseMove -event to the DIV-element above. When you move mouse over the DIV (rectangle) the program should output the coordinates of your pointer. Try first outputting to the console using console.log.</p>
         <p> When the program is working, you can try outputting the text on the H2 element with an id "coords" the box</p> 
         <p>HINT: You need to use document.getElementById("coordinates").innerHTML to achieve this.</p>
+        <div id="geoOutput"></div> 
 </body>
 
 </html>

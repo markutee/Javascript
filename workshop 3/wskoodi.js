@@ -76,4 +76,58 @@ exercise2Heading.onmouseout = handleMouseOut;
 
 //Tehtävä 3
 
+// Funktion textarea-fokuksen käsittelyyn
+function handleTextareaFocus() {
+    const textarea = document.getElementById("textdata");
+    textarea.style.backgroundColor = "#f0f8ff"; // Muutetaan taustan väri
+    const message = document.getElementById("message");
+    message.textContent = "Please fill in the form with proper data.";
+}
+
+// Funktion näppäinpainallusten laskemiseen
+let keypressCount = 0; // Alustetaan laskuri
+
+// Funktion näppäinpainallusten laskemiseen, myös Backspace huomioidaan
+function handleTextareaKeydown(event) {
+    const charCount = document.getElementById("charcount");
+
+    // Tarkistetaan, jos näppäin ei ole 'Backspace'
+    if (event.key !== "Backspace") {
+        keypressCount++; // Lisätään laskuriin yksi jokaisesta näppäimestä
+    } else if (keypressCount > 0) {
+        keypressCount--; // Vähennetään yksi, jos painetaan Backspace ja laskuri ei ole nolla
+    }
+
+    charCount.textContent = "Keypresses: " + keypressCount;
+}
+
+// Funktion textarea-tarkistamiseen ennen lähettämistä
+function handleFormSubmit(event) {
+    event.preventDefault(); // Estetään oletustoiminto (lomakkeen lähettäminen)
+
+    const textareaValue = document.getElementById("textdata").value;
+    if (textareaValue.trim() === "") {
+        alert("The textarea is empty. Please provide some data.");
+    } else {
+        alert("Form submitted successfully!");
+    }
+}
+
+// Lisää tapahtumakuuntelijat textareaan ja lomakenapille
+const textarea = document.getElementById("textdata");
+textarea.onfocus = handleTextareaFocus;
+textarea.onkeydown = handleTextareaKeydown;
+
+const formButton = document.querySelector("form button");
+formButton.onclick = handleFormSubmit;
+
+//Tehtävä 4
+
+document.getElementById('coordinates').addEventListener('mousemove', function(event) {
+    const x = event.clientX;
+    const y = event.clientY;
+
+    console.log(`X: ${x}, Y: ${y}`); // Use backticks for template literals
+    document.getElementById('coordinates').innerHTML = `X: ${x}, Y: ${y}`; // Use backticks for template literals
+});
 
