@@ -55,3 +55,25 @@ function showError(error) {
 document.getElementById('nappi1').onclick = handleNappi1Click;
 document.getElementById('nappi2').onclick = handleNappi2Click;
 document.getElementById('nappi3').onclick = handleNappi3Click;
+
+//Tehtävä 2
+
+// Funktion hiiren siirtoon otsikon päälle
+function handleMouseOver() {
+    console.log("Stepped over by a mouse!");
+}
+
+// Funktion hiiren siirtoon otsikon ulkopuolelle
+function handleMouseOut() {
+    alert("Bye bye mouse!");
+}
+
+// Hakee "Exercise 2" -otsikon ja lisää tapahtumakuuntelijat
+const exercise2Heading = document.querySelector("h2:nth-of-type(2)");
+exercise2Heading.onmouseover = handleMouseOver;
+exercise2Heading.onmouseout = handleMouseOut;
+
+
+//Tehtävä 3
+
+
