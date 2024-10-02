@@ -90,69 +90,63 @@
 		</ul>
 		<hr/>
 		<h2>Exercise 5: Tables</h2>
-		<ul>
-		  <li class="surprise">Write a JavaScript function to  add rows to a table. Rows can contain preset values.</li>
-		  <li>When your code is working, try reading the content to be added from a set of fields below the table.</li>
-		</ul>
-		<br>
-		<table id="data" class="display">
-			<thead>
-			  <tr>
-				<th>Name</th>
-				<th>Position</th>
-				<th>Salary</th>
-			  </tr>
-			</thead>
-			<tbody>
-			  <tr>
-				<td>Tiger Nixon</td>
-				<td>System Architect</td>
-				<td>$320,800</td>
-			  </tr>
-			  <tr>
-				<td>Garrett Winters</td>
-				<td>Accountant</td>
-				<td>$170,750</td>
-			  </tr>
-			  <tr>
-				<td>Ashton Cox</td>
-				<td>Junior Technical Author</td>
-				<td>$86,000</td>
-			  </tr>
-			  <tr>
-				<td>Cedric Kelly</td>
-				<td>Senior Javascript Developer</td>
-				<td>$433,060</td>
-			  </tr>
-			  <tr>
-				<td>Airi Satou</td>
-				<td>Accountant</td>
-				<td>$162,700</td>
-			  </tr>
-			</tbody>
-			<tfoot>
-			</tfoot>
-		</table>
-		<p>
-			Name
-			<label for="textfield">:</label>
-			<input type="text" name="textfield" id="textfield">
-			<br>
-			Position:
-			<input type="text" name="textfield2" id="textfield2">
-			<br>
-			Salary: 
-			<input type="text" name="textfield3" id="textfield3">
-			<br>
-			<input type="button" onclick="insertRows()" name="Insert" id="Insert" value="Insert">
-		</p>
-		<hr/>
-		<h2>Bonus exercises for the enthusiastics</h2>
-		<ul>
-			<li dir="ltr">
-				<p dir="ltr">Write a loop, which goes through all the LI tags in the page and replaces them with a &lt;strong&gt; tagged, red text saying &quot;Replaced&quot;.</p>
-			</li>
-			<li dir="ltr">How would you replace the contents only on the ones with the word &lsquo;Select&rsquo; in them?</li>
-		</ul>
+<ul>
+  <li class="surprise">Write a JavaScript function to add rows to a table. Rows can contain preset values.</li>
+  <li>When your code is working, try reading the content to be added from a set of fields below the table.</li>
+</ul>
+<br>
+<table id="data" class="display">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tiger Nixon</td>
+      <td>System Architect</td>
+      <td>$320,800</td>
+    </tr>
+    <tr>
+      <td>Garrett Winters</td>
+      <td>Accountant</td>
+      <td>$170,750</td>
+    </tr>
+    <tr>
+      <td>Ashton Cox</td>
+      <td>Junior Technical Author</td>
+      <td>$86,000</td>
+    </tr>
+    <tr>
+      <td>Cedric Kelly</td>
+      <td>Senior Javascript Developer</td>
+      <td>$433,060</td>
+    </tr>
+    <tr>
+      <td>Airi Satou</td>
+      <td>Accountant</td>
+      <td>$162,700</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  Name: <input type="text" id="textfield"><br>
+  Position: <input type="text" id="textfield2"><br>
+  Salary: <input type="text" id="textfield3"><br>
+  <input type="button" onclick="insertRows()" value="Insert">
+</p>
+<hr/>
+<h2>Bonus exercises for the enthusiastics</h2>
+<ul>
+  <li dir="ltr">
+    <p dir="ltr">Write a loop, which goes through all the LI tags in the page and replaces them with a <strong> tagged, red text saying "Replaced".</p>
+  </li>
+  <li dir="ltr">How would you replace the contents only on the ones with the word ‘Select’ in them?</li>
+</ul>
+
+<script src="script.js"></script>
+
 	</body>
 </html>
