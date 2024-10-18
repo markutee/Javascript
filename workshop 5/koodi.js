@@ -78,7 +78,7 @@ document.querySelector("#theForm").addEventListener("submit", function (event) {
     let greetingMessage = ''; // Lisätervehdys 5 vuoden kohdalla
 
     // Alennus logiikka
-    if (years > 2) {
+    if (years >= 2) {
         const discount = totalCost * 0.2; // 20% alennus
         totalCost -= discount;
         discountMessage = 'Olet oikeutettu 20% alennukseen!';
